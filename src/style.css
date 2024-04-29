@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    font-family:'Zapfino';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 165px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav button {
+    font-family:'Zapfino';
+    color: white;
+    background: none;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+nav button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.menuContainer {
+    width: 33vw;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.menuItem {
+    font-family:'Zapfino';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+    border: solid thick rgb(60, 60, 60);
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    opacity: 90%;
+    background-color: rgb(30, 30, 30);
+    border-color: rgb(30, 30, 30);
+}
